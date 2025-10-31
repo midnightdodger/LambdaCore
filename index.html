@@ -1,41 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lambda Core</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Lambda Core  Home</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #frame{
+            width: 100%;
+            border: 0;
+            height: 81.5%;
+        }
+        body, html{
+            overflow: hidden;
+            margin: 0;
+            background-color: #1f1f1f;
+            height: 100%;
+            width: 100%;
+        }
+        #topbar{
+            display: flex;
+            background-color: black;
+            height: 50px;
+            align-items: center;
+        }
+        #topbar img{
+            border-radius: 50%;
+            height: 45px;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+        }
+        #adverts{
+            display: flex;
+            margin-left: auto;    
+        }
+        #topbar button{
+            transition: all 0.3s;
+            margin-right: 0.5%;
+            width: 10%;
+            height: 100%;
+            border-radius: 0;
+            border: 0;
+            background-color: black;
+            color: white;
+        }
+        #topbar button:hover{
+            font-size: 120%;
+            background-color: #1f1f1f;
+            border-left: 2px white solid;
+            border-right: 2px white solid;;
+        }
+        #bottom{
+            display: flex;
+            width: 100%;
+            height: 15%;
+            background-color: black;
+            color: white;
+            align-items: center;
+        }
+        #container-9ee0a4ac9d9bb784e1b2e3c570a14767{
+            margin: 0;
+            width: 10%;
+            color: white;
+        }
+        .container-9ee0a4ac9d9bb784e1b2e3c570a14767__title{
+            margin: 0;
+            display: none;
+            
+        }
+    </style>
+    <script src="switcher.js"></script>
 </head>
 <body>
     <div id="topbar">
-        <div id="services">
-
-            <h2>Account</h2>
-            <a href="bloom.html">
-            <h2>Bloom</h2>
-            </a>
-            <h2>Bloop</h2>
-            <h2>Boom</h2>
-            <h2>Apps</h2>
-            <h2>OS</h2>
+        <img src="logo.png" onclick="home()">
+        <button onclick="swap(this)">Services</button>
+        <button onclick="swap(this)">Software</button>
+        <button onclick="swap(this)">Hardware</button>
+        <button onclick="swap(this)">Blog</button>
+        <button onclick="swap(this)">Support</button>
+        <div id="adverts">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '64f82bba985f75efdf36d4a801f0566c',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/64f82bba985f75efdf36d4a801f0566c/invoke.js"></script>
         </div>
-    </div>
-    <script type="text/javascript">
-	atOptions = {
-		'key' : '64f82bba985f75efdf36d4a801f0566c',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/64f82bba985f75efdf36d4a801f0566c/invoke.js"></script>
-<div id="content">
-    <iframe src="http://87.106.56.146:5000/" id="content_iframe">
-    
-    </iframe>
-</div>
-    <script src="index.js"></script>
+    </div>    
+    <iframe id="frame" src="subpages/home.html">
 
+    </iframe>
+<div id="bottom">
+    <script async="async" data-cfasync="false" src="//pl27958066.effectivegatecpm.com/9ee0a4ac9d9bb784e1b2e3c570a14767/invoke.js"></script>
+    <div id="container-9ee0a4ac9d9bb784e1b2e3c570a14767"></div>
+    <div id="good_shit">
+        <h3>Powered by</h3>
+        <ul>
+            <li>Sustainable technology</li>
+            <li>Small developers</li>
+            <li>FOSS software</li>
+            <li>MIT licensing</li>
+            <li>Net-zero commitment</li>
+        </ul>
+        <h4>© 2025 Lambda Software</h4>
+    </div>
+</div>
 </body>
 </html>
