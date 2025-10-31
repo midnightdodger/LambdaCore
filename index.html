@@ -4,74 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Lambda Core  Home</title>
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Lambda Core Home</title>
     <style>
-        * {
-            font-family: 'Roboto', sans-serif;
+        * { font-family: 'Roboto', sans-serif; }
+        body, html { overflow: hidden; margin: 0; background-color: #1f1f1f; height: 100%; width: 100%; }
+        #frame { width: 100%; border: 0; height: 81.5%; }
+        #topbar { display: flex; background-color: black; height: 50px; align-items: center; }
+        #topbar img { border-radius: 50%; height: 45px; margin: 0 0.5%; }
+        #adverts { display: flex; margin-left: auto; }
+        #topbar button {
+            transition: all 0.3s; margin-right: 0.5%; width: 10%; height: 100%; border-radius: 0; border: 0;
+            background-color: black; color: white;
         }
-
-        #frame{
-            width: 100%;
-            border: 0;
-            height: 81.5%;
+        #topbar button:hover {
+            font-size: 120%; background-color: #1f1f1f; border-left: 2px white solid; border-right: 2px white solid;
         }
-        body, html{
-            overflow: hidden;
-            margin: 0;
-            background-color: #1f1f1f;
-            height: 100%;
-            width: 100%;
-        }
-        #topbar{
-            display: flex;
-            background-color: black;
-            height: 50px;
-            align-items: center;
-        }
-        #topbar img{
-            border-radius: 50%;
-            height: 45px;
-            margin-left: 0.5%;
-            margin-right: 0.5%;
-        }
-        #adverts{
-            display: flex;
-            margin-left: auto;    
-        }
-        #topbar button{
-            transition: all 0.3s;
-            margin-right: 0.5%;
-            width: 10%;
-            height: 100%;
-            border-radius: 0;
-            border: 0;
-            background-color: black;
-            color: white;
-        }
-        #topbar button:hover{
-            font-size: 120%;
-            background-color: #1f1f1f;
-            border-left: 2px white solid;
-            border-right: 2px white solid;;
-        }
-        #bottom{
-            display: flex;
-            width: 100%;
-            height: 15%;
-            background-color: black;
-            color: white;
-            align-items: center;
-        }
-        #container-9ee0a4ac9d9bb784e1b2e3c570a14767{
-            margin: 0;
-            width: 10%;
-            color: white;
-        }
-        .container-9ee0a4ac9d9bb784e1b2e3c570a14767__title{
-            margin: 0;
-            display: none;
-            
-        }
+        #bottom { display: flex; width: 100%; height: 15%; background-color: black; color: white; align-items: center; }
+        #container-9ee0a4ac9d9bb784e1b2e3c570a14767 { margin: 0; width: 10%; color: white; }
+        .container-9ee0a4ac9d9bb784e1b2e3c570a14767__title { margin: 0; display: none; }
     </style>
     <script src="switcher.js"></script>
 </head>
@@ -83,26 +40,45 @@
         <button onclick="swap(this)">Hardware</button>
         <button onclick="swap(this)">Blog</button>
         <button onclick="swap(this)">Support</button>
-        <div id="adverts" style="color: white;">
-            <h3>Ads removed Ɛ> </h3>
-        </div>
-    </div>    
-    <iframe id="frame" src="subpages/home.html">
 
-    </iframe>
-<div id="bottom">
-    <h3>Ads removed Ɛ> </h3>
-    <div id="good_shit">
-        <h3>Powered by</h3>
-        <ul>
-            <li>Sustainable technology</li>
-            <li>Small developers</li>
-            <li>FOSS software</li>
-            <li>MIT licensing</li>
-            <li>Net-zero commitment</li>
-        </ul>
-        <h4>© 2025 Lambda Software</h4>
+        <!-- Topbar ad placeholder -->
+        <div id="adverts">
+            <div id="ezoic-pub-ad-placeholder-101"></div>
+        </div>
+    </div>  
+
+    <!-- Main ad placeholder above iframe -->
+    <div id="ezoic-pub-ad-placeholder-102"></div>
+    <script>
+        ezstandalone.cmd.push(function () {
+            ezstandalone.showAds(101); // topbar
+            ezstandalone.showAds(102); // above iframe
+        });
+    </script>
+
+    <iframe id="frame" src="subpages/home.html"></iframe>
+
+    <div id="bottom">
+        <!-- Bottom ad placeholder -->
+        <div id="ezoic-pub-ad-placeholder-103" style="margin-right: 1%;"></div>
+
+        <div id="good_shit">
+            <h3>Powered by</h3>
+            <ul>
+                <li>Sustainable technology</li>
+                <li>Small developers</li>
+                <li>FOSS software</li>
+                <li>MIT licensing</li>
+                <li>Net-zero commitment</li>
+            </ul>
+            <h4>© 2025 Lambda Software</h4>
+        </div>
     </div>
-</div>
+
+    <script>
+        ezstandalone.cmd.push(function () {
+            ezstandalone.showAds(103); // bottom
+        });
+    </script>
 </body>
 </html>
